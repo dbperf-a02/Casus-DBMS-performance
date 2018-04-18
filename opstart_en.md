@@ -2,11 +2,11 @@
 
 ## TODOs
 
-- [ ] Install the necessary software (see below)
-- [ ] Each team member clones this repository (see below)
-- [ ] Fill out the names and contact information of team members in [README_en.md](README_en.md)
-- [ ] Adjust the name of "dbperf.tex" under [paper_en/](paper_en/) into "dbperf-icX.tex" (with X being the number of your group)
-- [ ] Get familiar with Git (More info at the bottom of this document)
+- [x] Install the necessary software (see below)
+- [x] Each team member clones this repository (see below)
+- [x] Fill out the names and contact information of team members in [README_en.md](README_en.md)
+- [x] Adjust the name of "dbperf.tex" under [paper_en/](paper_en/) into "dbperf-icX.tex" (with X being the number of your group)
+- [x] Get familiar with Git (More info at the bottom of this document)
 - [ ] Reproduce the test environment under [experiment/](experiment/)
 
 ## Software installation
