@@ -13,7 +13,7 @@ Nog in te vullen
 ### MySQL Database Management System Forks Comparison and Usage
 Dit artikel gaat over het vinden van de beste oplossing in de MySQL database management system familie. Voor het vinden van de beste oplossing testen we drie grote MySQL DBMS branches die momenteel aan de top staan: Percona Server, MariaDB en MySQL Community Server. Op deze drie DBMS voeren ze een analyse uit van de storage engines, performance metrics en beschikbare oplossingen voor backup en restore procedures.
 ### EVALUATION OF DATABASE MANAGEMENT SYSTEMS, Bachelor‟s Thesis in Computer Engineering, Xing Liang & Yongyu Lu
-In dit artikel worden verschillende DBMS systemen vergeleken. Er wordt eerst een selecties gemaakt adhv verschillende requirements. Deze selectie van systemen worden dan aan verschillende testen onderworpen met behulp van 'simpele' queries. Volgens deze analyse is Firebird de beste DBMS.
+In dit artikel worden verschillende DBMS systemen vergeleken. Er wordt eerst een selecties gemaakt adhv verschillende requirements. Deze selectie van systemen worden dan aan verschillende testen onderworpen met behulp van 'simpele' queries. Volgens deze analyse is Firebird de beste DBMS. Dit artikel sluit zeer nauw aan bij onze onderzoeksvraag.
 
 ## Verslag reading group
 ## Deelonderzoeksvragen
