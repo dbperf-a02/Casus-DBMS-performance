@@ -10,10 +10,10 @@ In [opstart.md](opstart.md) vind je instructies om aan de slag te gaan.
 
 | Naam     | Github                        | Email                               |
 | :---     | :---                          | :---                                |
-| student1 | <https://github.com/student1> | <mailto:student1@student.hogent.be> |
-| student2 | <https://github.com/student2> | <mailto:student2@student.hogent.be> |
-| student3 | <https://github.com/student3> | <mailto:student3@student.hogent.be> |
-| student4 | <https://github.com/student4> | <mailto:student4@student.hogent.be> |
+| Frédéric De Smet | <https://github.com/frddsmet> | <mailto:fredericdesmet@live.be> |
+| Jari De Troch | <https://github.com/jariDeTroch> | <mailto:jari.detroch.y7078@student.hogent.be> |
+| Billy Cottrell | <https://github.com/BillyCottrell> | <mailto:billy.cottrell.y9181@student.hogent.be> |
+| Robin Segers | <https://github.com/RobinSegers> | <mailto:robin.segers.y7480@student.hogent.be> |
 
 ## Uitvoeren experimenten
 
