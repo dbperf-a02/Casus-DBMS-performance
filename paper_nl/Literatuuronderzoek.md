@@ -17,7 +17,11 @@ In dit artikel worden verschillende DBMS systemen vergeleken. Er wordt eerst een
 
 ## Verslag reading group
 #### _Wat vinden jullie van de andere artikels in vergelijking met Bassil (2012)?_
-Het artikel van Jari (1) bespreekt DBMS op meerdere soorten query’s maar het is wel spijtig dat de query’s zelf niet getoond worden. Ook meer gegevens dan de uitvoertijd zouden een mooie aanvulling geweest zijn. In de bespreking van de experimenten worden er steeds maar een paar DBMS bijgehaald en niet altijd allemaal. In artikel (4) word zeer duidelijk besproken welke DMBS worden geselecteerd om een focus op te leggen.
+Het artikel van Jari (1) bespreekt DBMS op meerdere soorten query’s maar het is wel spijtig dat de query’s zelf niet getoond worden. Ook meer gegevens dan de uitvoertijd zouden een mooie aanvulling geweest zijn. In de bespreking van de experimenten worden er steeds maar een paar DBMS bijgehaald en niet altijd allemaal.
+
+In artikel 3 gaat het maar over drie DBMS in de MySQL database management system familie die worden vergeleken, waardoor de bekomen informatie niet kan worden uitgebreid naar andere DBMS.
+
+In artikel 4 word zeer duidelijk besproken welke DMBS worden geselecteerd om een focus op te leggen.
 
 Het artikel van Billy (2) bespreekt MongoDB en SQL Server op meerdere soorten query’s maar het is wel spijtig dat de query’s zelf niet getoond worden. Ook meer gegevens dan de uitvoertijd zouden een mooie aanvulling geweest zijn. In dit artikel wordt er wel goed vergeleken tussen de twee DBMS en de soorten queries.
 #### _Welke vinden jullie het interessantst en waarom?_
