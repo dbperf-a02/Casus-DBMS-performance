@@ -62,19 +62,26 @@ Om postgre te installeren, voert u als root user (su -) dit commando uit :
   yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm
 
 vervolgens voert u
-  yum install postgresql10
-  yum install postgresql10-server
-  /usr/pgsql-10/bin/postgresql-10-setup initdb
+  ```yum install postgresql10
+     yum install postgresql10-server
+     /usr/pgsql-10/bin/postgresql-10-setup initdb
+  ```
 uit
 
 Daarna moet u het proces bij je opstart processen zetten door :
-  systemctl enable postgresql-10
+ ```
+ systemctl enable postgresql-10
+ ```
 
 Om de service dan te starten: 
-  systemctl start postgresql-10
+ ```
+ systemctl start postgresql-10
+ ```
 
 Dan moet u een nieuw paswoord instellen 
-  sudo -u postgres psql postgres
+ ```
+ sudo -u postgres psql postgres
+ ```
 
 Dan staat er normaal postgres-# links onder
 Daarna voert u \password postgres uit om een wachtwoord in te stellen (in mariadb was dit 'dbo')
