@@ -1,4 +1,4 @@
-SELECT * FROM dbo.invoice
+SELECT * FROM invoice
 WHERE invoice.in_id > 50 AND invoice.in_date > '1-1-2006' AND invoice.in_date < '1-1-2007'
 AND invoice.in_description LIKE '%re%'
 AND (invoice.in_total <> 100 OR NOT invoice.in_cu_id >= 5 )

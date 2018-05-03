@@ -1,4 +1,4 @@
-USE dbo;
+
 SELECT SUM(invoice.in_total),
   AVG(invoice.in_totalafterdiscount),
   MAX(invoice.in_total),

@@ -1,1 +1,1 @@
-SELECT * FROM dbo.customer
+SELECT * FROM customer
