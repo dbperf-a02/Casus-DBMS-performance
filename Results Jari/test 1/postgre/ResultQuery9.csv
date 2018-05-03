@@ -1,0 +1,201 @@
+sys,real,user
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.01,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
+psql:query9.sql:7: ERROR:  column "item" of relation "item" does not exist
+LINE 2: SET item.it_price = (item.it_price * 0.1),
+            ^
+0,0.00,0.00
