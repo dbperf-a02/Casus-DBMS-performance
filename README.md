@@ -63,7 +63,7 @@ Om postgre te installeren, voert u als root user (su -) dit commando uit :
 
 vervolgens voert u
   ```
-  yum install postgresql10
+     yum install postgresql10
      yum install postgresql10-server
      /usr/pgsql-10/bin/postgresql-10-setup initdb
   ```
