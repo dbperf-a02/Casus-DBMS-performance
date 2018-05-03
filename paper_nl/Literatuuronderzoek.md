@@ -76,6 +76,11 @@ Steeds dezelfde query keer op keer testen en alle resultaten bijhouden en opslaa
 
 
 ## Deelonderzoeksvragen
+- Welke DBMS (MariaDB vs PostgreSQL) is sneller? 
+- Is er een verschil tussen verschillende uitvoeringen op hetzelfde toestel? 
+- Welke DBMS is beter geschikt voor moeilijke/makkelijke queries? 
+
+
 ## Literatuurstudie
 ## Bronnen
 [1] https://www.researchgate.net/publication/319715249_Huge_and_Real-Time_Database_Systems_A_Comparative_Study_and_Review_for_SQL_Server_2016_Oracle_12c_MySQL_57_for_Personal_Computer
