@@ -1,3 +1,3 @@
 SELECT *
-FROM dbo.category, dbo.item
-WHERE dbo.item.it_ca_id = dbo.category.ca_id
+FROM category, item
+WHERE item.it_ca_id = category.ca_id

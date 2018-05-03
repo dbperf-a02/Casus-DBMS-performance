@@ -1,4 +1,4 @@
-USE dbo;
+
 SELECT customer.cu_name
 FROM customer
 JOIN dbo.users ON users.us_name = customer.cu_name

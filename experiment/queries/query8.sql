@@ -1,4 +1,4 @@
-USE dbo;
+
 SELECT customer.cu_id, invoice.in_id, invoicedetail.ind_qty, item.it_serialnumber,
        movement.mo_description, movement_details.mod_it_id, users.us_id, users.us_code,
        purchaseorder.po_description, supplier.su_name,

@@ -23,7 +23,7 @@ PRIMARY KEY (cu_id)
 CREATE TABLE invoice (
 in_id int NOT NULL ,
 in_cu_id int default NULL,
-in_date datetime(0) default NULL,
+in_date timestamp(0) default NULL,
 in_description char(50) default NULL,
 in_total int default NULL,
 in_discount char(50) default NULL,
@@ -38,7 +38,7 @@ ind_id int NOT NULL ,
 ind_in_id int default NULL,
 ind_it_id int default NULL,
 ind_qty int default NULL,
-ind_total float default NULL,
+ind_total double precision default NULL,
 PRIMARY KEY (ind_id)
 ) ;
 
@@ -53,10 +53,10 @@ it_lo_id int default NULL,
 it_serialnumber char(50) default NULL,
 it_code char(50) default NULL,
 it_barcode char(10) default NULL,
-it_expirydate datetime(0) default NULL,
+it_expirydate timestamp(0) default NULL,
 it_description char(50) default NULL,
 it_manufacturer char(50) default NULL,
-it_price float default NULL,
+it_price double precision default NULL,
 it_qtity int default NULL,
 PRIMARY KEY (it_id)
 )  ;
@@ -75,7 +75,7 @@ CREATE TABLE movement (
 mo_id int NOT NULL ,
 mo_us_id int default NULL,
 mo_description char(50) default NULL,
-mo_date datetime(0) default NULL,
+mo_date timestamp(0) default NULL,
 PRIMARY KEY (mo_id)
 )  ;
 
@@ -100,8 +100,8 @@ po_id int NOT NULL ,
 po_us_id int default NULL,
 po_su_id int default NULL,
 po_description char(50) default NULL,
-po_dateofissue datetime(0) default NULL,
-po_recievedate datetime(0) default NULL,
+po_dateofissue timestamp(0) default NULL,
+po_recievedate timestamp(0) default NULL,
 po_status char(50) default NULL,
 PRIMARY KEY (po_id)
 )  ;
@@ -126,7 +126,7 @@ CREATE INDEX pod_it_id ON
 CREATE TABLE receipt (
 re_id int NOT NULL ,
 re_cu_id int default NULL,
-re_date datetime(0) default NULL,
+re_date timestamp(0) default NULL,
 re_amount int default NULL,
 re_modeofpayment varchar(50) default NULL,
 re_checknumber varchar(50) default NULL,
@@ -140,7 +140,7 @@ CREATE TABLE stockcount (
 st_id int NOT NULL ,
 st_us_id int default NULL,
 st_description varchar(50) default NULL,
-st_date datetime(0) default NULL,
+st_date timestamp(0) default NULL,
 st_status varchar(50) default NULL,
 PRIMARY KEY (st_id)
 ) ;
