@@ -10,7 +10,7 @@ In [opstart.md](opstart.md) vind je instructies om aan de slag te gaan.
 
 | Naam     | Github                        | Email                               |
 | :---     | :---                          | :---                                |
-| Frédéric De Smet | <https://github.com/frddsmet> | <mailto:fredericdesmet@live.be> |
+| Frédéric De Smet | <https://github.com/frddsmet> | <mailto:frederic.desmet.y2042@student.hogent.be> |
 | Jari De Troch | <https://github.com/jariDeTroch> | <mailto:jari.detroch.y7078@student.hogent.be> |
 | Billy Cottrell | <https://github.com/BillyCottrell> | <mailto:billy.cottrell.y9181@student.hogent.be> |
 | Robin Segers | <https://github.com/RobinSegers> | <mailto:robin.segers.y7480@student.hogent.be> |
