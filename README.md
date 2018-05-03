@@ -27,6 +27,10 @@ Laptop van Robin: Lenovo ideapad 520
 Processor	Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 2904 MHz, 2 core('s), 4 logische processor(s)
 Geïnstalleerd fysiek geheugen (RAM)	12,0 GB
 
+Laptop van Frédéric: Asus UX510UXK
+Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 2904 MHz, 2 core('s), 4 logische processor(s)
+Geïnstalleerd fysiek geheugen (RAM)	8,0 GB
+
 ### Opstart VM
 
 1. Downloaden van repository taak (niet clonen).
