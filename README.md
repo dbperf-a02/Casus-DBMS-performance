@@ -62,7 +62,8 @@ Om postgre te installeren, voert u als root user (su -) dit commando uit :
   yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm
 
 vervolgens voert u
-  ```yum install postgresql10
+  ```
+  yum install postgresql10
      yum install postgresql10-server
      /usr/pgsql-10/bin/postgresql-10-setup initdb
   ```
