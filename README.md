@@ -83,33 +83,50 @@ Dan sluit u postgres af door \q uit te voeren
 Om dan ervoor te zorgen dat de databank werkt op redhat moet u navigeren als root user naar de 
 /var/lib/pgsql/10/data/ directory gaan.
 Daar voert u 
- ```vi pg_hba_conf
+ ```
+ vi pg_hba_conf
  ``` 
 uit en gaat u doormiddel van het insert status ( 'i' typen) naar onder
 en past u de lijnen aan van 
-  ```local all postgres peer```
+  ```
+  local all postgres peer
+  ```
 naar 
-```  local all postgres md5 ```
+``` 
+local all postgres md5
+```
 of u kan in plaats van md5 naar trust veranderen als u niet steeds opnieuw het wachtwoord wil ingeven,
 dit is echter niet veilig.
 
 Daarna moet u de service herstarten door 
- ``` sudo service postgresql-10 restart```
+ ``` 
+ sudo service postgresql-10 restart
+ ```
 
 Dan logt u zicht in als user van postgres
- ``` sudo su - postgres```
+ ```
+ sudo su - postgres
+ ```
 en daarna opent u het postgreSQL command promt 
  ``` psql```
 U moet een user aanmaken
- ``` CREATE USER dbo WITH PASSWORD 'dbo';```
+ ``` 
+ CREATE USER dbo WITH PASSWORD 'dbo';
+ ```
 Maak dan een databank aan 
- ``` CREATE DATABASE dbo```
+ ```
+ CREATE DATABASE dbo
+ ```
 Daarna moet u het script uitvoeren dat de tabellen aanmaakt maar daarvoor moet u eerst nog het dataformaat 
 aanpassen door 
-```  'sed -i 's/0:00*/:/g' cd /vagrant/data/invoice.csv ```
+``` 
+'sed -i 's/0:00*/:/g' cd /vagrant/data/invoice.csv 
+```
 dan moet u navigeren naar waar de file staat die de tabellen aanmaakt.
 Daar voert u het script uit met 
- ``` psql -U dbo -f create_tables.sql (dit moet in de gewone vagrant command prompt(links onderaan))```
+ ```
+ psql -U dbo -f create_tables.sql (dit moet in de gewone vagrant command prompt(links onderaan))
+ ```
 
 Dan maakt u een script aan om de csv bestanden in te laden
 
