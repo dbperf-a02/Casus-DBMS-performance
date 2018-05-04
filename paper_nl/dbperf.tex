@@ -10,7 +10,8 @@
 % 3) latexmk -pdf db-performance
 
 \documentclass[fleqn,10pt]{artikeltin}
-
+\usepackage{graphicx} % Required for including pictures
+\graphicspath{{figures/}} % Specifies the directory where pictures are stored
 %------------------------------------------------------------------------------
 % Metadata over het artikel
 %------------------------------------------------------------------------------
@@ -105,7 +106,7 @@ Laptop van Frédéric: Asus UX510UXK
 Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 2904 MHz, 2 core('s), 4 logische processor(s)
 Geïnstalleerd fysiek geheugen (RAM)	8,0 GB
 
-### Opstart VM
+\title{Opstart VM}
 
 1. Downloaden van repository taak (niet clonen want dit geeft problemen met de conversie van EOF van Windows die github automatisch doet).
 2. Navigeren naar de map "experiment" (via git bash)
@@ -114,7 +115,7 @@ Geïnstalleerd fysiek geheugen (RAM)	8,0 GB
 5. Het script dat wij gemaakt hebben vereist een installatie van "time", dit moet als user root dus voert u het commando "su -" uit en het wachtwoord is "vagrant".
 6. Omdat het beter is de query meermaals te doen uitvoeren hebben we in het script voor elke query onderstaande code geschreven, het voert elke query 50 maal uit.
 
-#rm ResultQuery1.csv
+\#rm ResultQuery1.csv
 echo "sys,real,user" >> ResultQuery1.csv
 for j in {0..49}
 do
@@ -128,7 +129,7 @@ done
 11. Daar voert u het commando \framebox[1.1\width]{bash script.sh}\par uit en wacht u tot het klaar is.
 12. Ons script exporteert .csv bestanden, deze komen in dezelfde map terecht als de vagrant file.
 
-### Rstudio berekeningen
+\title{Rstudio berekeningen}
 
 Omdat ons script .csv bestanden exporteert gebruiken we volgend commando om het in te lezen in RStudio.
 
@@ -143,11 +144,11 @@ Omdat we ook de boxplot ervan willen gebruiken we het commando \framebox[1.1\wid
 Als laatste willen we ook de standaard afwijking, maar onze csv heeft drie kolommen dus willen we eerst de kolom met effectieve tijden eruit halen. Daarvoor geven we het commando \framebox[1.1\width]{x <- ResultQuery1[,"real"]}\par. Daarin is de "x" de variabele, ResultQuery1 de dataframe en "real" is de kolom die we willen.
 Om vervolgens de standaard afwijking te laten berekenen geven we \framebox[1.1\width]{sd(x)}\par in.
 
-## Postgre installeren
+\title{Postgre installeren}
 
 Om postgre te installeren, voert u als root user (su -) dit commando uit :
  
-  \framebox[1.1\width]{yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm} \par
+  \framebox[1.1\width]{yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86\_64/pgdg-centos10-10-2.noarch.rpm} \par
 
 Vervolgens voert u
   \framebox[1.1\width]{yum install postgresql10}\par
@@ -165,14 +166,14 @@ Om de service dan te starten
 Dan moet u een nieuw paswoord instellen 
   \framebox[1.1\width]{sudo -u postgres psql postgres}\par
  
-Dan staat er normaal postgres-# als command prompt (links onderaan)
-Daarna voert u \password postgres uit om een wachtwoord in te stellen (in mariadb was dit 'dbo')
-Dan sluit u postgres af door \q uit te voeren
+Dan staat er normaal postgres-\# als command prompt (links onderaan)
+Daarna voert u \\password postgres uit om een wachtwoord in te stellen (in mariadb was dit 'dbo')
+Dan sluit u postgres af door \\q uit te voeren
 
 Om dan ervoor te zorgen dat de databank werkt op redhat moet u navigeren als root user naar de 
 /var/lib/pgsql/10/data/ directory.
 Daar voert u 
-  \framebox[1.1\width]{vi pg_hba_conf}\par
+  \framebox[1.1\width]{vi pg\_hba\_conf}\par
   
 uit en gaat u doormiddel van het insert status ( 'i' typen) naar onder en past u de lijnen aan van 
   \framebox[1.1\width]{ local all postgres peer}\par
@@ -202,41 +203,45 @@ aanpassen door
 
 Dan moet u navigeren naar waar de file staat die de tabellen aanmaakt.
 Daar voert u het script uit met 
- \framebox[1.1\width]{ psql -U dbo -f create_tables.sql (dit moet in de gewone vagrant command prompt(links onderaan))}\par
+ \framebox[1.1\width]{ psql -U dbo -f create\_tables.sql (dit moet in de gewone vagrant command prompt(links onderaan))}\par
 
 Dan maakt u een script aan om de csv bestanden in te laden
- \framebox[1.1\width]{#!/bin/bash
-  	# load csv files into postgreSQL database
+ \framebox[1.1\width]{\#!/bin/bash
+  	\# load csv files into postgreSQL database
 
-	function load_csv {
-			local csv_path=$1
-			local file="${csv_path##*/}"
-			local table_name="${file%%.*}"
+	function load\_csv {
+			local csv\_path=\$1
+			local file="\${csv\_path\#\#*/}"
+			local table\_name="\${file\%\%.*}"
 
-			sudo psql -U dbo -d dbo -c "\copy ${table_name} FROM '${csv_path}' DELIMITER ';' CSV HEADER;";
+			sudo psql -U dbo -d dbo -c "\\copy \${table\_name} FROM '\${csv\_path}' DELIMITER ';' CSV HEADER;";
 	}
 
 	dir=/vagrant/data
 
-	for file in "${dir}"/*.csv; do
-			load_csv "${file}"
+	for file in "\${dir}"/*.csv; do
+			load\_csv "\${file}"
 	done}\par
 In de .sql bestanden met de queries verwijdert u overal de 'dbo.' bijvoorbeeld bij query10.sql past u dus in de WHERE clause "dbo.invoicedetail" aan naar "invoicedetail"
 Daarna moet u de queries door een conversietool halen voor de andere syntax die postgre heeft. 
 Wij hebben http://www.sqlines.com/online gebruikt. Daar selecteert u links mysql en rechts postgresql
 
 Omdat de syntax van Postgre iets anders is om een query uit te voeren hebben we van bovenstaande script van mariadb een kleine aanpassing gemaakt, we hebben per query dit gemaakt:
-#rm ResultQuery1.csv
+\#rm ResultQuery1.csv
 echo "sys,real,user" >> ResultQuery1.csv
 for j in {0..49}
 do
-{ /usr/bin/time -f "%s,%e,%U" psql -U dbo -f query1.sql > /dev/null; } 2>> ResultQuery1.csv;
+{ /usr/bin/time -f "\%s,\%e,\%U" psql -U dbo -f query1.sql > /dev/null; } 2>> ResultQuery1.csv;
 done 
 
 \section{Experimenten}
 \label{sec:experimenten}
 
 Beschrijf hier hoe de experimenten verlopen zijn en de belangrijkste resultaten. Voeg ook tabel(len) en figuren toe.
+
+\begin{figure}
+    \includegraphics[width=0.5\textwidth]{query1.png}
+\end{figure}
 
 Beschrijf zeker ook de uitkomst van de statistische toets: zijn de verschillen in performantie significant?
 
