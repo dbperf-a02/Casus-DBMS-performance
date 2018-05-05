@@ -18,7 +18,7 @@
 %------------------------------------------------------------------------------
 
 \JournalInfo{HoGent Bedrijf en Organisatie} % Journal information
-\Archive{Onderzoekstechnieken 2016 - 2017} % Additional notes (e.g. copyright, DOI, review/research article)
+\Archive{Onderzoekstechnieken 2017 - 2018} % Additional notes (e.g. copyright, DOI, review/research article)
 
 %---------- Titel & auteur ----------------------------------------------------
 
@@ -35,7 +35,8 @@
 %---------- Abstract ----------------------------------------------------------
 
 \Abstract{ 
-    Hier komt de samenvatting van het artikel, als een doorlopende tekst van één paragraaf. Schrijf dit pas helemaal op het einde, als de inhoud al op punt staat. Volgende elementen moeten hier zeker in vermeld worden: de \textbf{context} (waarom is dit werk belangrijk?), de \textbf{nood} (waarom moet dit onderzocht worden?), de \textbf{taak} (wat is er precies uitgevoerd waarover in dit artikel gerapporteerd wordt?), het \textbf{object} (wat staat in dit document geschreven?), het \textbf{resultaat}, de belangrijkste \textbf{conclusie} en \textbf{perspectief} (welk vervolgonderzoek zou er hierna kunnen uitgevoerd worden?). }
+    Door het uitvoeren van een performantievergelijking op verschillende database-systemen kunnen we achterhalen welke van de onderzochte DBMS beter zijn dan andere. Als we dit niet zouden onderzoeken en we gebruiken voor een project en tragere DBMS kan het project snel negatief uitdraaien. Wanneer de performantie wel wordt onderzocht kunnen we voor het project de juiste en beste DBMS kiezen. In het artikel hebben we aan de hand van drie verschillende computers de performantie van twee verschillende database-systemen onderzocht. Het eerste deel van het artikel bestaat uit een literatuur studie van andere artikels binnen hetzelfde vakgebied en het tweede deel bevat het uitgevoerde experiment. Uit het resultaat van het onderzoek blijkt dat voor alle computers bijna alle query's even snel verliepen, alleen query's 1, 6 en 11 waren ingewikkelder waardoor er een duidelijk verschil is in uitvoeringstijd tussen de verschillende computers. Na het onderzoek kunnen we besluiten dat PostgreSQL sneller is dan MariaDB. In een volgend onderzoek zouden we dit verschil in snelheid tussen PostgreSQL en MariaDB kunnen onderzoeken. Dit kan gebeuren door een andere manier voor de verwerking van query's te vinden en 
+    wat deze manier dan anders maakt dan de manier die we nu hebben gebruikt.}
 
 %---------- Onderzoeksdomein en sleutelwoorden --------------------------------
 
@@ -59,14 +60,13 @@
 \section{Inleiding} % The \section*{} command stops section numbering
 \label{sec:inleiding}
  
-Beschrijf in deze sectie de context (dit houdt ook literatuuroverzicht in), nood en taak. Hier horen veel literatuurverwijzingen thuis, minstens naar~\textcite{Bassil2012}.
-
-Een typische laatste zin voor de inleiding is ``De rest van dit artikel is als volgt gestructureerd: Sectie~\ref{sec:LiteratuurStudie} bevat de Literatuur studie, Sectie~\ref{sec:methodologie} beschrijft de gevolgde methodologie, Sectie [...]''
+ De doelstelling van deze opdracht is om een mini-onderzoek uit te voeren zoals dat in de praktijk typisch zou moeten verlopen. De concrete opdracht is om een performantievergelijking uit te voeren op enkele DBMS en daarover juist te rapporteren. De eerste stap van het onderzoek was het opzoeken en begrijpen van vakliteratuur en hierover een verslag te maken. Na de literatuur studie in sectie ~\ref{sec:LiteratuurStudie} hebben we op onze eigen computers het onderzoek van~\textcite{Bassil2012}, een eerder gemaakt onderzoek over de performantie van DBMS, proberen te reproduceren. De rest van dit artikel is als volgt gestructureerd: Sectie~\ref{sec:methodologie} beschrijft de gevolgde methodologie, in Sectie~\ref{sec:experimenten} staan de gevonden resultaten en Sectie~\ref{sec:conclusie} bevat de conclusie van het onderzoek. De bronvermeldingen van de gebruikte artikels bevindt zich onder Sectie~\ref{sec:conclusie}.
+ 
 
 \section{Literatuur studie}
 \label{sec:LiteratuurStudie}
 \textbf{Basil 2012}\\\\
-Om het artikel samen te vaten in een paar zinnen zou ik zeggen dat het gaat over verscheidene DBMS die getest worden op performantie doormiddel van complexe en \\minder complexe queries. De performantie werd gemeten door het geheugen gebruik, cpu gebruik, thread count en de duurtijd om het uit te voeren. De geteste DBMS zijn MS SQL Server 2008, Orracle 11g, IBM DB2, MySQL 5.5 en MS Access 2010\\\\
+Het artikel gaat over verscheidene DBMS die getest worden op performantie doormiddel van complexe en \\minder complexe queries. De performantie werd gemeten door het geheugen gebruik, cpu gebruik, thread count en de duurtijd om het uit te voeren. De geteste DBMS zijn MS SQL Server 2008, Orracle 11g, IBM DB2, MySQL 5.5 en MS Access 2010\\\\
 \textbf{Huge and Real-Time Database Systems: A \\Comparative Study and Review for SQL Server2016, Oracle 12c and MySQL 5.7 for Personal Computer}\\\\
 Dit artikel gaat ook over het testen van verscheidene DBMS doormiddel van queries. Alleen testen ze niet altijd op \\dezelfde dataset maar op verschillende groottes van sets. De queries worden niet getoond maar ze schetsen wel kort wat de bedoeling van de query was. Ten opzicht van het artikel van Basil testen ze meer aspecten van een DBMS.\\\\
 \textbf{Comparing nosql mongodb to an sql db}\\\\
