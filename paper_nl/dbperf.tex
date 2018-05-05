@@ -236,12 +236,19 @@ done
 \section{Experimenten}
 \label{sec:experimenten}
 
-De experimenten uitvoeren verliep vlot toen we het script hadden geschreven dat elke query vijftig maal uitvoert. De resultaten waren bij de meeste query's hetzelfde voor beide computers. Enkel bij query 1, 6,11 waren de resultaten anders zoals rechts te zien is op de grafieken. Ondanks dat pc1 dubbel zoveel RAM geheugen heeft was hij toch dubbel tot viermaal zo traag. Query 6 is een query met functies en een join in en query 11 enkel een select statement met een where clause. Deze query's zijn dus ingewikkelder dan gewoon een select statement zoals in query 1, op de grafieken kan men zien dat de ingewikkeldere query's op mariadb veel langer duren dan op postgre. 
+De experimenten uitvoeren verliep vlot toen we het script hadden geschreven dat elke query vijftig maal uitvoert. De resultaten waren bij de meeste query's hetzelfde voor beide computers. Enkel bij query 1, 6,11 waren de resultaten anders zoals onder te zien is op de grafieken. Ondanks dat pc1 dubbel zoveel RAM geheugen heeft was hij toch dubbel tot viermaal zo traag. Query 6 is een query met functies en een join in en query 11 enkel een select statement met een where clause. Deze query's zijn dus ingewikkelder dan gewoon een select statement zoals in query 1, op de grafieken kan men zien dat de ingewikkeldere query's op mariadb veel langer duren dan op postgre. 
 
 Waarschijnlijk komt het snelheidsverschil door het feit dat computer 2 een snellere cpu heeft en het ramgeheugen een hogere kloksnelheid heeft. In het totaal is er dan maar een klein verschil qua RAM maar door dat de CPU sneller is, is pc2 in het geheel sneller. 
 
-\begin{figure}
-    \includegraphics[width=0.5\textwidth]{query1.png} \includegraphics[width=0.5\textwidth]{query6Graph.png} \includegraphics[width=0.5\textwidth]{query11Graph.png}
+\begin{figure}[ht]
+    \includegraphics[width=0.30\textwidth]{query1.png}
+   
+\end{figure}
+\begin{figure}[ht]
+     \includegraphics[width=0.30\textwidth]{query6Graph.png} 
+\end{figure}
+\begin{figure}[ht]
+     \includegraphics[width=0.30\textwidth]{query11Graph.png}
 \end{figure}
 \section{Conclusie}
 \label{sec:conclusie}
@@ -258,8 +265,7 @@ We kunnen zien dat we weinig tot geen verschil hebben op verschillende testmomen
 % Referentielijst
 %------------------------------------------------------------------------------
 
-\phantomsection
-\printbibliography[heading=bibintoc]
+
 
 \begin{thebibliography}{8}
     
