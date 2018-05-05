@@ -1,4 +1,4 @@
-
+USE dbo;
 SELECT customer.cu_id, invoice.in_id, invoicedetail.ind_qty, item.it_serialnumber,
        movement.mo_description, movement_details.mod_it_id, users.us_id, users.us_code,
        purchaseorder.po_description, supplier.su_name,
@@ -24,13 +24,11 @@ WHERE invoice.in_id > 50
         WHERE supplier.su_phone = "123456")
           AND customer.cu_id = invoice.in_cu_id
           AND invoicedetail.ind_in_id = invoice.in_id
-          AND invoicedetail.ind_it_id = item.it_id
+          AND invoicedetail.ind_it_id = item.it_serialnumber
           AND movement_details.mod_mo_id = movement.mo_id
           AND movement.mo_us_id = users.us_id
           AND purchaseorder.po_us_id = users.us_id
-          AND purchaseorder.po_us_id = users.us_id
-          AND purchaseorder.po_su_id
-          AND supplier.su_id
+          
         ORDER BY customer.cu_id, customer.cu_name DESC,
           invoice.in_id DESC, users.us_name, invoice.in_description DESC
         GROUP BY customer.cu_id, invoice.in_id, invoicedetail.ind_qty,
